@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+fieldset{
+    border:none;
+}

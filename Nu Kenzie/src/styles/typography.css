@@ -1,0 +1,37 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.title__weight{
+    font-weight: bold;
+}
+
+.titleOne{
+    font-size: var(--font-size-1);
+}
+
+.titleTwo{
+    font-size: var(--font-size-2);
+}
+
+.titleThree{
+    font-size: var(--font-size-3);
+}
+
+.titleFour{
+    font-size: var(--font-size-4);
+}
+
+.text__weight{
+    font-weight: normal;
+}
+
+.headline__text{
+    font-size: var(--font-size-3);
+}
+
+.body__text{
+    font-size: var(--font-size-4);
+}
+
+
+

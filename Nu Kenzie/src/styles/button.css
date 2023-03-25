@@ -1,0 +1,40 @@
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: .4s;
+}
+
+.button__insert{
+    height: 48px;
+    width: 100%;
+    padding: 0 110px;
+    background-color: var(--color-primary);
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.button__insert:hover{
+    background-color: var(--color-primary-2);
+    color: var(--color-grey-1);
+}
+
+.button__delete{
+    height: 25px;
+    width: 48px;
+    padding: 0 30px;
+    background-color: var(--color-grey-2) ;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 500;
+    color:  var(--color-grey-4);
+
+}
+
+.button__delete:hover{
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-2);
+}

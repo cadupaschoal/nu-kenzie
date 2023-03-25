@@ -1,23 +1,26 @@
-
+import styles from './style.module.css';
 export const List = ({listTransactions,removeTransaction}) => {
 
    return(
     <>
-    <h2>Lista</h2>
-    <button onClick={() => console.log(listTransactions)}>debug</button>
-    <ul>
-    {listTransactions.map((transaction,index) =>{
+    <h3>Resumo financeiro</h3>
+    {/* <button className="button button__delete" onClick={() => console.log(listTransactions)}>debug</button> */}
+    <ul className={styles.list}>
+    {listTransactions.length === 0 ? <li><h2>Você ainda não possui nenhum lançamento</h2></li> 
+    : listTransactions.map((transaction,index) =>{
         const {transactionType,transactionValue,transactionDescription} = transaction;
         (transaction.id = index);
         return (
-            <li key={transaction.id} >
-                <div className="left">
+            <li className={styles.card} key={transaction.id} >
+                 {transactionType === 'Entrada' ? <div className={styles.signal__green}></div>
+                    : <div className={styles.signal__grey}></div> }
+                <div className={styles.left}>
                     <h2>{transactionDescription}</h2>
-                    <p>{Number(transactionValue).toLocaleString('pt-br',{style:'currency',currency:'BRL'}) }</p>
-                </div>
-                <div className="rigth">
                     <p>{transactionType}</p>
-                    <button onClick={() => removeTransaction(transaction.id)}>Excluir</button>
+                </div>
+                <div className={styles.rigth}>
+                    <p>{Number(transactionValue).toLocaleString('pt-br',{style:'currency',currency:'BRL'}) }</p>
+                    <button className='button button__delete' onClick={() => removeTransaction(transaction.id)}>Excluir</button>
                 </div>
             </li>
     )

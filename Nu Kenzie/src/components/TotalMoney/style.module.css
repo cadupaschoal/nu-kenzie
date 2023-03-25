@@ -1,0 +1,20 @@
+.total__container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: solid 1px var(--color-grey-2);
+    border-radius: 4px;
+    padding: 30px 20px 40px 30px;
+    justify-content: space-around;
+}
+
+
+
+span{
+    box-sizing: border-box;
+    padding-left: 80px;
+    display: inline-flex;
+    color: var(--color-primary);
+    width: 200px;
+    /* padding-left: 40%; */
+}
