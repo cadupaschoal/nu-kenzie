@@ -51,28 +51,3 @@ export const TotalMoney =  ({listTransactions}) => {
         </>
     );
 };
-
-// export const TotalMoney =  ({listTransactions}) => {
-//     console.log(listTransactions);
-//     const total = () => {
-//         const entradas = [];
-//         const saidas = [];
-//         listTransactions.map(item => {
-//             if(item.transactionType === 'Entrada'){
-//                 entradas.push(item);
-//             }else if(item.transactionType === 'Despesa'){
-//                 saidas.push(item);
-//             } /*else{
-//                 alert('Determine o tipo de transação para prosseguir')
-//             }*/
-//         });
-//         console.log(entradas);
-//         console.log(saidas);
-//     }
-
-//     return(
-//         <>
-//         <button onClick={() => total()} >AAAA</button>
-//         </>
-//     )
-// };

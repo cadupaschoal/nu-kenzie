@@ -20,10 +20,10 @@ export const Form = ({listTransactions,setListTransactions, addNewTransaction}) 
             transactionValue: '',
             transactionDescription: '',
             transactionType: 'tipo',
-        });}
+        });};
         
 
-    }
+    };
 
     return(
         <form className={styles.form} onSubmit={submit}>
@@ -34,11 +34,12 @@ export const Form = ({listTransactions,setListTransactions, addNewTransaction}) 
            </fieldset>
            <fieldset className="form" >
             <label className="body__text" htmlFor="value">Valor(R$)</label>
-            <input className="input" type="text" value={formData.transactionValue} placeholder="Digite aqui sua descrição" name="value" onChange={(e) => setFormData({...formData, transactionValue: e.target.value})}/>
+            <input className="input" type="text" value={formData.transactionValue} placeholder="1" name="value" onChange={(e) => setFormData({...formData, transactionValue: e.target.value})}/>
            </fieldset>
            <fieldset className="form" >
-            <select className="select" onChange={(e) => setFormData({...formData,transactionType: e.target.value})} value = {formData.transactionType}>
-                <option value="tipo">Tipo de transação</option>
+            <label className="body__text" htmlFor="select">Tipo de valor</label>
+            <select className="select" name="select" onChange={(e) => setFormData({...formData,transactionType: e.target.value})} value = {formData.transactionType}>
+                <option value="tipo">Selecione</option>
                 <option value="Entrada">Entrada</option>
                 <option value="Despesa">Despesa</option>
             </select>

@@ -6,5 +6,5 @@ export const Header = () => {
         <header className={styles.header}>
             <img src={Logo} alt="Nu Kenzie" />
         </header>
-    )
-}
+    );
+};

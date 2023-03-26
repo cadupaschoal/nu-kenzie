@@ -19,6 +19,11 @@
 }
 
 .select{
+    cursor: pointer;
     padding: 11px 16px;
+    background: url(../assets/images/ANGLE-DOWN.svg) no-repeat center right #FFF;
+    background-position: 250px;
     
 }
+
+

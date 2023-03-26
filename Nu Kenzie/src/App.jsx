@@ -3,8 +3,9 @@ import { Form } from './components/Form/index.jsx';
 import { List } from './components/List/index.jsx';
 import { TotalMoney } from './components/TotalMoney/index.jsx';
 import { Header } from './components/Header/index.jsx';
+import { ListContainer } from './components/ListContainer/index.jsx';
 import './styles/index.css';
-import styles from './styles/pages/home.module.css'
+import styles from './styles/pages/home.module.css';
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -22,6 +23,21 @@ function App() {
  };
  
 
+  // return (
+  //   <div className="App">
+  //       <Header />
+  //       <main className='container'>
+  //         <div className={styles.right}>
+  //           <Form listTransactions={listTransactions} setListTransactions={setListTransactions} addNewTransaction={addNewTransaction}/>
+  //           <TotalMoney listTransactions={listTransactions} /> 
+  //         </div>
+  //         <div className='left'>
+  //           <List listTransactions={listTransactions} removeTransaction={removeTransaction} />
+  //         </div>
+  //       </main>
+  //   </div>
+  // )
+
   return (
     <div className="App">
         <Header />
@@ -30,9 +46,9 @@ function App() {
             <Form listTransactions={listTransactions} setListTransactions={setListTransactions} addNewTransaction={addNewTransaction}/>
             <TotalMoney listTransactions={listTransactions} /> 
           </div>
-          <div className='left'>
+          <ListContainer>
             <List listTransactions={listTransactions} removeTransaction={removeTransaction} />
-          </div>
+          </ListContainer>
         </main>
     </div>
   )
