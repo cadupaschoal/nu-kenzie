@@ -4,7 +4,6 @@ export const List = ({listTransactions,removeTransaction}) => {
    return(
     <>
     <h3 className={styles.summary} >Resumo financeiro</h3>
-    {/* <button className="button button__delete" onClick={() => console.log(listTransactions)}>debug</button> */}
     <ul className={styles.list}>
         {listTransactions.length === 0 ? <li><h2 className={styles.none}>Você ainda não possui nenhum lançamento</h2></li> 
         : listTransactions.map((transaction,index) =>{

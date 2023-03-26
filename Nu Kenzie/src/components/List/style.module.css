@@ -93,12 +93,15 @@
 
     .rigth{
         height: 100%;
+        max-width: 30%;
         align-items: flex-end;
         padding-right: 15px;
     }
 
     .left{
         height: 100%;
-        
+        max-width: 70%;
     }
+
+    
 }

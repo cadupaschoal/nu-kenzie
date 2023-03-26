@@ -7,8 +7,8 @@ export const TotalMoney =  ({listTransactions}) => {
     const allOuts = listTransactions.filter(transaction => {
         return transaction.transactionType === 'Despesa'
    });
-   console.log(allEntries)
-    const totalEntriesValue = (allEntries) => {
+
+    const totalEntriesValue = () => {
         const total = allEntries.map(transation => {
             const {transactionValue} = transation;
             return Number(transactionValue);
@@ -16,7 +16,7 @@ export const TotalMoney =  ({listTransactions}) => {
         return total;
     };
 
-    const totalOutsValue = (allOuts) => {
+    const totalOutsValue = () => {
         const total = allOuts.map(transation => {
             const {transactionValue} = transation;
             return Number(transactionValue);
@@ -25,10 +25,9 @@ export const TotalMoney =  ({listTransactions}) => {
     };
 
      const balance = () => {
-        const entries = totalEntriesValue(allEntries);
-        const outs = totalOutsValue(allOuts);
-        console.log(allEntries);
-        console.log(allOuts)
+        const entries = totalEntriesValue();
+        const outs = totalOutsValue();
+        
         const entriesTotal = entries.reduce((previusValue,currentValue) => {
             return previusValue + currentValue;
         },0);
@@ -38,9 +37,9 @@ export const TotalMoney =  ({listTransactions}) => {
         },0);
 
         return entriesTotal - outsTotal;
-    }
+    };
+
     const finalBalance = balance();
-    console.log(finalBalance);
     
     return(
         <>

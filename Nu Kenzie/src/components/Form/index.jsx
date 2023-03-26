@@ -11,7 +11,6 @@ export const Form = ({listTransactions,setListTransactions, addNewTransaction}) 
 
     const submit = (event) => {
         event.preventDefault();
-        /* criar condicional para campos vazios */
         const {transactionDescription,transactionValue,transactionType} = formData;
         const empty = (transactionDescription === '' || transactionValue === '' || transactionType === 'tipo');
         {empty ? alert('Preencha todos os campos para realizar a transação') : 
@@ -29,7 +28,7 @@ export const Form = ({listTransactions,setListTransactions, addNewTransaction}) 
         <form className={styles.form} onSubmit={submit}>
            <fieldset className="form" >
             <label className="body__text" htmlFor="description">Descrição</label>
-            <input className="input" type="text" value={formData.transactionDescription} placeholder="Digite aqui sua descrição" name="description" onChange={(e) => setFormData({...formData, transactionDescription: e.target.value})}/>
+            <input maxLength="25" className="input" type="text" value={formData.transactionDescription} placeholder="Digite aqui sua descrição" name="description" onChange={(e) => setFormData({...formData, transactionDescription: e.target.value})}/>
             <p>Ex: compra de roupas</p>
            </fieldset>
            <fieldset className="form" >

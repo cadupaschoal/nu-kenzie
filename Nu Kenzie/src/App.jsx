@@ -21,23 +21,6 @@ function App() {
     const newList = listTransactions.filter(transaction => transaction.id !== id);
     setListTransactions(newList);
  };
- 
-
-  // return (
-  //   <div className="App">
-  //       <Header />
-  //       <main className='container'>
-  //         <div className={styles.right}>
-  //           <Form listTransactions={listTransactions} setListTransactions={setListTransactions} addNewTransaction={addNewTransaction}/>
-  //           <TotalMoney listTransactions={listTransactions} /> 
-  //         </div>
-  //         <div className='left'>
-  //           <List listTransactions={listTransactions} removeTransaction={removeTransaction} />
-  //         </div>
-  //       </main>
-  //   </div>
-  // )
-
   return (
     <div className="App">
         <Header />
