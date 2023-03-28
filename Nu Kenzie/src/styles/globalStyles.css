@@ -7,14 +7,9 @@
     --color-grey-2: #E9ECEF;
     --color-grey-1: #F8F9FA;
 
-    --font-size-1: 38px; 
-    --font-size-2: 22px;
-    --font-size-3: 16px;
-    --font-size-4: 12px;
+    --font-size-1: 2.375rem; 
+    --font-size-2: 1.375rem;
+    --font-size-3: 1rem;
+    --font-size-4: 0.75rem;
     
 }
-
-.App{
-    width: 100%;
-}
-

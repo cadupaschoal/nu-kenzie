@@ -3,27 +3,33 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .input,.select{
     font-family: 'Inter',sans-serif;
     font-weight: 400;
     font-size: var(--font-size-3);
-    height: 53px;
+    height: 3.3125rem;
     width: 100%;
-    padding: 13px 16px;
+    padding: 0.8125rem 1rem;
     background-color: #F8F9FA;
-    border: 2px #F8F9FA solid;
-    border-radius: 8px;
+    border: 0.125rem #F8F9FA solid;
+    border-radius: 0.5rem;
 }
 
 .select{
     cursor: pointer;
-    padding: 11px 16px;
+    padding: 0.6875rem 1rem;
     background: url(../assets/images/ANGLE-DOWN.svg) no-repeat center right #FFF;
-    background-position: 250px;
+    background-position: 15.625rem;
     
 }
 
+
+@media (max-width:22.25rem) {
+    .select{
+        background-position: 12.5rem;
+    }
+}
 

@@ -1,8 +1,24 @@
 
 .left{
-    width: 100%;
+    width: 80%;
+    max-width: 22.1875rem;
+    margin: 0 auto;
 }
 
 .left > h3{
-    margin-left: 15px;
+    margin-left: 0.9375rem;
+}
+
+@media (min-width:56.25rem) {
+    .left{
+        max-width: 35rem;
+        margin: 0;
+        
+    }
+}
+
+@media(max-width:29.375rem){
+    .left{
+        width: 100%;
+    }
 }

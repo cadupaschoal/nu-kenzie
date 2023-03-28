@@ -1,4 +1,5 @@
 import styles from './style.module.css'
+
 export const TotalMoney =  ({listTransactions}) => {
     const allEntries = listTransactions.filter(transaction => {
          return transaction.transactionType === 'Entrada'

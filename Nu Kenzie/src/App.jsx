@@ -13,8 +13,6 @@ function App() {
   const addNewTransaction = (formData) => {
     const newTransaction = {...formData};
     setListTransactions([...listTransactions,newTransaction]);
-    console.log(listTransactions)
-    console.log(newTransaction)
   };
 
   const removeTransaction = (id) => {

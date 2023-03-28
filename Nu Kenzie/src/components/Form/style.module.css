@@ -3,14 +3,16 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
-    height: 435px;
-    width: 355px;
-    padding: 30px 20px 40px 30px;
-    border: solid #00000020 1px;
+    height: 27.1875rem;
+    width: 100%;
+    max-width: 22.1875rem;
+    padding: 1.875rem 1.25rem 2.5rem 1.875rem;
+    border: solid #00000020 0.0625rem;
+
 }
 
 input:focus{
-    border: solid 2px var(--color-grey-4);
+    border: solid 0.125rem var(--color-grey-4);
     transition: .4s;
 }
 
@@ -23,7 +25,7 @@ fieldset > label{
     font-family: 'Inter',sans-serif;
     font-weight: 400;
     color: var(--color-grey-4);
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 fieldset > p{
